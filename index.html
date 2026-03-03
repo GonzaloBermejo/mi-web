@@ -6,7 +6,6 @@
     <title>Gonzalo Bermejo Miranda</title>
     <meta name="description" content="Página personal de Gonzalo Bermejo Miranda — ciencia, lingüística, primatología y reflexiones personales">
     <style>
-        /* Tipografía y colores */
         body {
             font-family: 'Georgia', serif;
             font-size: 18px;
@@ -14,11 +13,11 @@
             color: #222;
             background-color: #fff;
             margin: 0;
-            padding-top: 60px; /* espacio para menú fijo */
+            padding-top: 70px;
             text-align: justify;
         }
 
-        /* Menú minimalista fijo */
+        /* Menú fijo */
         nav {
             position: fixed;
             top: 0;
@@ -37,23 +36,16 @@
             font-weight: 500;
             transition: color 0.3s;
         }
-        nav a:hover {
-            color: #0077cc;
-        }
+        nav a:hover { color: #0077cc; }
 
-        /* Cabecera y foto */
+        /* Cabecera */
         #main-photo {
             text-align: center;
-            margin: 20px 0 40px 0;
+            margin: 20px 0 30px 0;
         }
-        #main-photo img {
-            width: 300px;
-            border-radius: 8px;
-        }
-        #main-photo h1 {
-            margin-bottom: 15px;
-            font-size: 32px;
-        }
+        #main-photo img { width: 300px; border-radius: 8px; }
+        #main-photo h1 { margin-bottom: 5px; font-size: 32px; }
+        #main-photo .tagline { font-style: italic; font-size: 18px; color: #555; }
 
         /* Secciones */
         section {
@@ -67,26 +59,31 @@
             font-size: 26px;
         }
 
-        /* Libros recomendados */
-        #libros ul {
-            list-style-type: disc;
-            padding-left: 25px;
+        /* Instituciones */
+        .institution-photos {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
         }
-        #libros a {
-            color: #0077cc;
-            text-decoration: none;
+        .institution-photos img {
+            width: 150px;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
-        #libros a:hover {
-            text-decoration: underline;
+        .institution-photos img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
 
-        /* Última frase destacada */
-        .final-phrase {
-            font-style: italic;
-            font-size: 20px;
-            text-align: center;
-            margin-top: 30px;
-        }
+        /* Libros recomendados */
+        #libros ul { list-style-type: disc; padding-left: 25px; }
+        #libros a { color: #0077cc; text-decoration: none; }
+        #libros a:hover { text-decoration: underline; }
+
+        /* Última frase */
+        .final-phrase { font-style: italic; font-size: 20px; text-align: center; margin-top: 30px; }
 
         /* Responsive */
         @media (max-width: 600px) {
@@ -94,27 +91,29 @@
             nav { flex-direction: column; padding: 10px 0; }
             nav a { margin: 5px 0; }
             #main-photo h1 { font-size: 26px; }
+            #main-photo img { width: 220px; }
+            #main-photo .tagline { font-size: 16px; }
             section h2 { font-size: 22px; }
-            .final-phrase { font-size: 18px; }
             .institution-photos img { width: 120px; margin-bottom:10px; }
+            .final-phrase { font-size: 18px; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Menú de navegación -->
+    <!-- Menú -->
     <nav>
         <a href="#presentacion">Presentación</a>
         <a href="#trayectoria">Trayectoria</a>
         <a href="#aficiones">Aficiones</a>
         <a href="#idiomas">Idiomas</a>
         <a href="#libros">Libros</a>
-        <a href="#psico">Psicología</a>
     </nav>
 
-    <!-- Foto y título principal -->
+    <!-- Foto y título -->
     <div id="main-photo">
         <h1>Gonzalo Bermejo Miranda</h1>
+        <div class="tagline">Profesor, investigador y divulgador en ciencia, lingüística y primatología</div>
         <img src="100_5736.JPG" alt="Retrato de Gonzalo Bermejo Miranda en exterior">
     </div>
 
@@ -129,14 +128,14 @@
         <!-- Trayectoria -->
         <section id="trayectoria">
             <h2>Mi trayectoria académica</h2>
-            
-            <!-- Cinco fotos en fila de instituciones -->
-            <div class="institution-photos" style="display:flex; justify-content:center; gap:15px; flex-wrap:wrap; margin-bottom:20px;">
-                <img src="Sant_Jordi.jpg" alt="Colegio Sant Jordi" style="width:150px; border-radius:8px;">
-                <img src="Amor_de_Dios.jpg" alt="Colegio Amor de Dios" style="width:150px; border-radius:8px;">
-                <img src="Facultat.JPG" alt="Facultad donde cursé mis estudios" style="width:150px; border-radius:8px;">
-                <img src="LaCentral.jpg" alt="La Central" style="width:150px; border-radius:8px;">
-                <img src="Psico.jpg" alt="Instituto de Psicología" style="width:150px; border-radius:8px;">
+
+            <!-- Cinco fotos en fila -->
+            <div class="institution-photos">
+                <img src="Sant_Jordi.jpg" alt="Colegio Sant Jordi">
+                <img src="Amor_de_Dios.jpg" alt="Colegio Amor de Dios">
+                <img src="Facultat.JPG" alt="Facultad donde cursé mis estudios">
+                <img src="LaCentral.jpg" alt="La Central">
+                <img src="Psico.jpg" alt="Instituto de Psicología">
             </div>
 
             <p>Cursé mis estudios primarios en el ya desaparecido colegio Sant Jordi, y mis estudios de secundaria en el colegio Amor de Dios, obteniendo matrícula de honor en el antiguo COU, lo que me permitió tener el primer año de carrera gratis. Esa carrera (la primera de 2.1) fue física. En física aprendí muchas cosas, la primera fue que soy tan capaz de suspender un examen como cualquiera (uno y más de uno). Otra es que un cálculo integral puede ocupar varias páginas, pero la satisfacción de acabarlo es proporcional a su longitud. La tercera es que el Go en exceso es perjudicial para la salud!</p>
@@ -154,7 +153,7 @@
             <p>Por una carambola del destino aprendí inglés de muy pequeño casi sin darme cuenta. Mis padres tenían una vecina galesa y venía algunas tardes a ocuparse de mí y de mi hermano y a darnos clase (aunque al principio yo tampoco lo experimentaba como algo escolar, con los años ya sí). Al haber aprendido inglés de manera tan poco meritoria, tan poco esforzada, me costaba ponerme en el lugar de mis alumnos de inglés (¿qué podía haber más fácil que hablar inglés? pensaba yo ingenuamente). Cambié la perspectiva cuando tuve que aprender francés de adulto, me enteré de que aprender un idioma de cero siendo adulto es complicado (novedad para mí!). Aún así llegué al B2 (nivel C1 en mi prime!) de manera algo anárquica y con métodos poco académicos (leyendo a Sartre y a Molière). Ahora con el alemán no me he llevado ninguna sorpresa, ya sabía que aprender un idioma era difícil (sehr schwer). Si vivo 40 años más me gustaría aprender chino y ruso <span class="final-phrase">(20 para cada uno)</span>.</p>
         </section>
 
-        <!-- Libros recomendados -->
+        <!-- Libros -->
         <section id="libros">
             <h2>Libros recomendados</h2>
             <ul>
@@ -162,11 +161,6 @@
             </ul>
         </section>
 
-        <!-- Psicología -->
-        <section id="psico">
-            <h2>Psicología</h2>
-            
-        </section>
     </main>
 
     <!-- Scroll suave -->
@@ -183,6 +177,7 @@
 
 </body>
 </html>
+
 
 
 
