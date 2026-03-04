@@ -166,7 +166,6 @@ padding: 60px 20px 40px 20px;
 border-top: 1px solid #eee;
 }
 
-/* 🔹 Icono automático para enlaces externos */
 a.external::after {
 content: " ↗";
 font-size: 0.85em;
@@ -174,12 +173,7 @@ color: #0077cc;
 }
 
 @media (max-width: 768px) {
-
-nav {
-justify-content: space-between;
-padding: 14px 20px;
-}
-
+nav { justify-content: space-between; padding: 14px 20px; }
 nav .menu {
 display: none;
 flex-direction: column;
@@ -191,22 +185,12 @@ background: white;
 padding: 25px 0;
 box-shadow: 0 5px 12px rgba(0,0,0,0.08);
 }
-
 nav .menu.active { display: flex; }
-
-nav a {
-margin: 12px 0;
-text-align: center;
-}
-
+nav a { margin: 12px 0; text-align: center; }
 .menu-toggle { display: block; }
-
 body { font-size: 17px; }
 section h2 { font-size: 24px; }
-
-.aficiones-photos {
-grid-template-columns: repeat(2, 1fr);
-}
+.aficiones-photos { grid-template-columns: repeat(2, 1fr); }
 }
 </style>
 </head>
@@ -229,8 +213,42 @@ grid-template-columns: repeat(2, 1fr);
 
 <main>
 
-<!-- 🔹 TODO TU CONTENIDO ORIGINAL VA AQUÍ EXACTAMENTE IGUAL
-     (no lo modifico porque no es necesario para la funcionalidad) -->
+<section id="presentacion">
+<h2>Presentación</h2>
+<p>Mi nombre es Gonzalo Bermejo Miranda... (tu texto original aquí completo)</p>
+</section>
+
+<section id="trayectoria">
+<h2>Mi trayectoria académica</h2>
+<p>(contenido completo original)</p>
+</section>
+
+<section id="formacion">
+<h2>Formación y Premios/Becas</h2>
+<p>(contenido completo original)</p>
+</section>
+
+<section id="trabajo">
+<h2>Trabajo y publicaciones</h2>
+<div class="social-links">
+<a href="https://www.researchgate.net/profile/Gonzalo-Bermejo-Miranda">ResearchGate</a> |
+<a href="https://www.youtube.com/@Hans_Eysenck">Canal de YouTube</a>
+</div>
+</section>
+
+<section id="libros">
+<h2>Libros recomendados</h2>
+<ul>
+<li><a href="https://www.amazon.com/Sense-Style-Thinking-Writing-English/dp/0143127799">The Sense of Style – Steven Pinker</a></li>
+<li><a href="https://www.amazon.com/Moonwalking-Einstein-Science-Remembering-Everything/dp/0143120530">Moonwalking with Einstein – Joshua Foer</a></li>
+<li><a href="https://www.amazon.com/Time-Traveler-Scientists-Personal-Mission/dp/156858363X">Time Traveler – Ronald Mallett</a></li>
+</ul>
+</section>
+
+<section id="articulos">
+<h2>Artículos</h2>
+<p>Próximamente compartiré aquí ensayos y reflexiones...</p>
+</section>
 
 </main>
 
@@ -254,7 +272,6 @@ menu.classList.remove("active");
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Animación scroll suave
 const sections = document.querySelectorAll("section");
 const observer = new IntersectionObserver((entries) => {
 entries.forEach(entry => {
@@ -266,7 +283,6 @@ entry.target.classList.add("visible");
 
 sections.forEach(section => { observer.observe(section); });
 
-/* 🔹 Detectar enlaces externos automáticamente */
 document.querySelectorAll("a").forEach(link => {
 if (link.hostname && link.hostname !== window.location.hostname) {
 link.setAttribute("target", "_blank");
