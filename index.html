@@ -6,8 +6,8 @@
     <title>Gonzalo Bermejo Miranda | Profesor e Investigador en Ciencia y Lingüística</title>
     <meta name="description" content="Profesor e investigador especializado en ciencia, lingüística y primatología. Página oficial con trayectoria, publicaciones y divulgación.">
     <link rel="canonical" href="https://gonzalobermejomiranda.com/">
-    <link rel="icon" type="image/png" href="https://gonzalobermejomiranda.com/favicon.png">
-    <link rel="apple-touch-icon" href="https://gonzalobermejomiranda.com/favicon.png">
+    <link rel="icon" type="image/png" href="https://via.placeholder.com/32">
+    <link rel="apple-touch-icon" href="https://via.placeholder.com/32">
     <style>
         body {
             font-family: 'Georgia', serif;
@@ -20,7 +20,6 @@
             text-align: justify;
             scroll-behavior: smooth;
         }
-
         nav {
             position: fixed;
             top: 0;
@@ -34,11 +33,7 @@
             z-index: 1000;
             backdrop-filter: blur(8px);
         }
-
-        nav .menu {
-            display: flex;
-        }
-
+        nav .menu { display: flex; }
         nav a {
             margin: 0 18px;
             text-decoration: none;
@@ -47,7 +42,6 @@
             position: relative;
             transition: color 0.3s ease;
         }
-
         nav a::after {
             content: "";
             position: absolute;
@@ -58,15 +52,8 @@
             background: #0077cc;
             transition: width 0.3s ease;
         }
-
-        nav a:hover {
-            color: #0077cc;
-        }
-
-        nav a:hover::after {
-            width: 100%;
-        }
-
+        nav a:hover { color: #0077cc; }
+        nav a:hover::after { width: 100%; }
         .menu-toggle {
             display: none;
             font-size: 26px;
@@ -74,21 +61,14 @@
             position: absolute;
             right: 20px;
         }
-
         section {
             max-width: 900px;
             margin: 0 auto;
             padding: 80px 25px;
-            opacity: 0;
-            transform: translateY(30px);
+            opacity: 1; /* visible desde el inicio */
+            transform: translateY(0);
             transition: opacity 0.8s ease, transform 0.8s ease;
         }
-
-        section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
         section h2 {
             text-align: center;
             margin-bottom: 35px;
@@ -96,7 +76,6 @@
             font-weight: normal;
             position: relative;
         }
-
         section h2::after {
             content: "";
             display: block;
@@ -105,7 +84,6 @@
             background: #0077cc;
             margin: 15px auto 0 auto;
         }
-
         .institution-photos {
             display: flex;
             justify-content: center;
@@ -113,19 +91,16 @@
             flex-wrap: wrap;
             margin-bottom: 30px;
         }
-
         .institution-photos img {
             width: 160px;
             border-radius: 10px;
         }
-
         .aficiones-photos {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 20px;
             margin-top: 35px;
         }
-
         .aficiones-photos img {
             width: 100%;
             height: 190px;
@@ -134,35 +109,29 @@
             transition: transform 0.4s ease, box-shadow 0.4s ease;
             cursor: pointer;
         }
-
         .aficiones-photos img:hover {
             transform: scale(1.06);
             box-shadow: 0 10px 22px rgba(0,0,0,0.18);
         }
-
         .social-links {
             text-align: center;
             margin-top: 20px;
             font-size: 18px;
         }
-
         .social-links a {
             color: #0077cc;
             text-decoration: none;
             font-weight: 500;
         }
-
         .social-links a:hover {
             text-decoration: underline;
         }
-
         .final-phrase {
             font-style: italic;
             font-size: 20px;
             text-align: center;
             margin-top: 30px;
         }
-
         footer {
             text-align: center;
             font-size: 14px;
@@ -170,13 +139,8 @@
             padding: 60px 20px 40px 20px;
             border-top: 1px solid #eee;
         }
-
         @media (max-width: 768px) {
-            nav {
-                justify-content: space-between;
-                padding: 14px 20px;
-            }
-
+            nav { justify-content: space-between; padding: 14px 20px; }
             nav .menu {
                 display: none;
                 flex-direction: column;
@@ -188,31 +152,12 @@
                 padding: 25px 0;
                 box-shadow: 0 5px 12px rgba(0,0,0,0.08);
             }
-
-            nav .menu.active {
-                display: flex;
-            }
-
-            nav a {
-                margin: 12px 0;
-                text-align: center;
-            }
-
-            .menu-toggle {
-                display: block;
-            }
-
-            body {
-                font-size: 17px;
-            }
-
-            section h2 {
-                font-size: 24px;
-            }
-
-            .aficiones-photos {
-                grid-template-columns: repeat(2, 1fr);
-            }
+            nav .menu.active { display: flex; }
+            nav a { margin: 12px 0; text-align: center; }
+            .menu-toggle { display: block; }
+            body { font-size: 17px; }
+            section h2 { font-size: 24px; }
+            .aficiones-photos { grid-template-columns: repeat(2, 1fr); }
         }
     </style>
 </head>
@@ -244,11 +189,11 @@
         <section id="trayectoria">
             <h2>Mi trayectoria académica</h2>
             <div class="institution-photos">
-                <img src="Sant_Jordi.jpg" alt="Colegio Sant Jordi">
-                <img src="Amor_de_Dios.jpg" alt="Colegio Amor de Dios">
-                <img src="Facultat.JPG" alt="Facultad">
-                <img src="LaCentral.jpg" alt="La Central">
-                <img src="Psico.jpg" alt="Psicología">
+                <img src="https://via.placeholder.com/160" alt="Colegio Sant Jordi">
+                <img src="https://via.placeholder.com/160" alt="Colegio Amor de Dios">
+                <img src="https://via.placeholder.com/160" alt="Facultad">
+                <img src="https://via.placeholder.com/160" alt="La Central">
+                <img src="https://via.placeholder.com/160" alt="Psicología">
             </div>
             <p>
                 Cursé mis estudios primarios en el ya desaparecido colegio Sant Jordi, y mis estudios de secundaria en el colegio Amor de Dios, obteniendo matrícula de honor en el antiguo COU, lo que me permitió tener el primer año de carrera gratis. Esa carrera (la primera de 2.1) fue física. En física aprendí muchas cosas, la primera fue que soy tan capaz de suspender un examen como cualquiera (uno y más de uno). Otra es que un cálculo integral puede ocupar varias páginas, pero la satisfacción de acabarlo es proporcional a su longitud. La tercera es que el Go en exceso es perjudicial para la salud!
@@ -303,14 +248,14 @@
                 Sin que el orden signifique nada: 1. Deporte (cuando tengo tiempo) 2. Collserola (aunque no tenga tiempo) 3. Perros de la perrera (si voy sobrado de tiempo) 3. Mis alumnos (cuando los tengo, me quitan todo el tiempo) 4. Go (estoy intentando quitarme porque también me quita tiempo) 5. Comer (todo el tiempo) 6. Dormir (solo si me da tiempo) 7. Ver waterpolo (cuando es el tiempo)
             </p>
             <div class="aficiones-photos">
-                <img src="piscina.jpg" alt="Piscina">
-                <img src="Collserola.jpg" alt="Collserola">
-                <img src="caacb.jpg" alt="CAACB">
-                <img src="clase.jpg" alt="Clase">
-                <img src="Go.jpg" alt="Juego de Go">
-                <img src="lentejas.jpg" alt="Comida: lentejas">
-                <img src="sleepbenefits.jpg" alt="Dormir">
-                <img src="Waterpolo.jpg" alt="Waterpolo">
+                <img src="https://via.placeholder.com/200x190" alt="Piscina">
+                <img src="https://via.placeholder.com/200x190" alt="Collserola">
+                <img src="https://via.placeholder.com/200x190" alt="CAACB">
+                <img src="https://via.placeholder.com/200x190" alt="Clase">
+                <img src="https://via.placeholder.com/200x190" alt="Juego de Go">
+                <img src="https://via.placeholder.com/200x190" alt="Comida: lentejas">
+                <img src="https://via.placeholder.com/200x190" alt="Dormir">
+                <img src="https://via.placeholder.com/200x190" alt="Waterpolo">
             </div>
         </section>
 
@@ -330,11 +275,35 @@
                 <li><a href="https://www.amazon.es/dp/0465072690?ref=ppx_yo2ov_dt_b_fed_asin_title" target="_blank" rel="noopener noreferrer">Words and Rules – Steven Pinker</a></li>
                 <li><a href="https://www.amazon.es/dp/1846680409?ref=ppx_yo2ov_dt_b_fed_asin_title" target="_blank" rel="noopener noreferrer">Don't Sleep, There are Snakes – Daniel Everett</a></li>
                 <li><a href="https://www.amazon.es/dp/1781253935?ref=ppx_yo2ov_dt_b_fed_asin_title" target="_blank" rel="noopener noreferrer">How Language Began – Daniel Everett</a></li>
-                <li><a href="https://www.amazon.es/dp/844753975X?ref=ppx_yo2ov_dt_b_fed_asin_title" target="_blank" rel="noopener noreferrer">Estadística para las ciencias del comportamiento. Ejercicios comentados – Antonio Solanas</a></li>
-                <li><a href="https://www.amazon.es/s?k=whoever+fights+monsters&i=stripbooks&__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91" target="_blank" rel="noopener noreferrer">Whoever Fights Monsters – Robert Ressler</a></li>
-                <li><a href="https://www.amazon.es/Unfolding-Language-Guy-Deutscher-2006-06-01/dp/B00NPP0H7S/ref=sr_1_4" target="_blank" rel="noopener noreferrer">The Unfolding of Language – Guy Deutscher</a></li>
-                <li><a href="https://www.amazon.es/Los-renglones-torcidos-Dios-Imprescindibles/dp/8467065923" target="_blank" rel="noopener noreferrer">Los Renglones Torcidos de Dios – Torcuato Luca de Tena</a></li>
-                <li><a href="https://www.amazon.es/El-diablo-los-n%C3%BAmeros-Matem%C3%A1ticas/dp/8415937261" target="_blank" rel="noopener noreferrer">
+                <li><a href="https://via.placeholder.com/200" target="_blank" rel="noopener noreferrer">Estadística para las ciencias del comportamiento – Antonio Solanas</a></li>
+                <li><a href="https://via.placeholder.com/200" target="_blank" rel="noopener noreferrer">Whoever Fights Monsters – Robert Ressler</a></li>
+                <li><a href="https://via.placeholder.com/200" target="_blank" rel="noopener noreferrer">The Unfolding of Language – Guy Deutscher</a></li>
+                <li><a href="https://via.placeholder.com/200" target="_blank" rel="noopener noreferrer">Los Renglones Torcidos de Dios – Torcuato Luca de Tena</a></li>
+                <li><a href="https://via.placeholder.com/200" target="_blank" rel="noopener noreferrer">El Diablo de los Números – Hans Magnus Enzensberger</a></li>
+                <li><a href="https://via.placeholder.com/200" target="_blank" rel="noopener noreferrer">Kanzi: The Ape at the Brink of the Human Mind – Sue Savage-Rumbaugh</a></li>
+            </ul>
+        </section>
+
+        <section id="articulos">
+            <h2>Artículos</h2>
+            <p>Próximamente compartiré aquí ensayos y reflexiones sobre ciencia, lenguaje, primates y otras cuestiones que probablemente no solucionen el mundo pero al menos lo complicarán con rigor.</p>
+           </main>
+
+    <footer>
+        © <span id="year"></span> Gonzalo Bermejo Miranda · Barcelona
+    </footer>
+
+    <script>
+        const toggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("menu");
+        toggle.addEventListener("click", () => { menu.classList.toggle("active"); });
+        document.querySelectorAll(".menu a").forEach(link => {
+            link.addEventListener("click", () => { menu.classList.remove("active"); });
+        });
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
 
 
 
