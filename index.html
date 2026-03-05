@@ -492,9 +492,13 @@ nav a:hover::after {
     <h2>Contacto</h2>
     <p>Si quieres ponerte en contacto conmigo, puedes escribirme un correo o encontrarme en redes:</p>
 
-    <!-- Correo -->
+    <!-- Correo híbrido -->
     <p>
-        <a href="mailto:gonzalo.bermejo@franciscanespoblenou.org" class="mail-link">gonzalo.bermejo@franciscanespoblenou.org</a>
+        <a href="mailto:gonzalo.bermejo@franciscanespoblenou.org" 
+           class="mail-link"
+           onclick="if(window.innerWidth>768){window.open('https://mail.google.com/mail/?view=cm&fs=1&to=gonzalo.bermejo@franciscanespoblenou.org','_blank'); return false;}">
+           gonzalo.bermejo@franciscanespoblenou.org
+        </a>
     </p>
 
     <!-- Redes sociales -->
@@ -569,6 +573,7 @@ a.mail-link:hover {
 </script>
 </body>
 </html>
+
 
 
 
